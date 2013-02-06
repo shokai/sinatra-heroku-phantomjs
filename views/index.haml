@@ -1,0 +1,15 @@
+- content_for :title do
+  = @title
+
+- content_for :head do
+  :javascript
+    var app_root = "#{app_root}";
+    var links_api = app_root+'/links.json';
+  %script{:type => 'text/javascript', :src => "#{app_root}/js/main.js"}
+
+%div
+  %input{:id => 'url', :type => 'text', :value => 'http://shokai.org/blog/', :size => 60}
+  %input{:id => 'btn_links', :type => 'button', :value => 'get links'}
+%div
+  %h2 result
+  %ul#results
