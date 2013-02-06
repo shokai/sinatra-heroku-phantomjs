@@ -8,7 +8,7 @@ get links
 
 Heroku
 ------
-http://phantom-getlinks.herokuapp.com
+* http://phantom-getlinks.herokuapp.com
 
 
 Install Dependencies
